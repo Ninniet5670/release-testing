@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "release-testing-Ninniet5670"
+version = "v0.0.1"
+dependencies = [
+  "requests"
+]
+requires-python = ">=3.8"
+authors = [
+  {name = "Marco Aurélio", email = "contato.marcoproenca@gmail.com"}
+]
+description = "TESTING NEW PYPROJECT.TOML AND CI/CD"
+readme = "README.md"
+license = {file = "LICENSE.txt"}
+keywords = ["testing"]
+classifiers = [
+  "Programming Language :: Python"
+]
+
+[project.urls]
+Homepage = "https://github.com/Ninniet5670/release-testing"
+Repository = "https://github.com/Ninniet5670/release-testing"
+
+[project.scripts]
+spam-cli = "helloTest:src.test"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/testing"]
